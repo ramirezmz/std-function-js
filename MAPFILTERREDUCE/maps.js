@@ -32,3 +32,11 @@ for (const price of prices) {
 expensive = prices.filter((price) => price >= 20);
 
 // Reduce
+let sum = 0;
+for (price of expensive) {
+  sum += expensive;
+}
+
+sum = expensive.reduce((acum, price) => acum + price);
+
+console.log(sum);
