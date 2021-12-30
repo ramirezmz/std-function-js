@@ -20,5 +20,15 @@ prices = dollars.map((dollar) => Number(dollar.slice(0, dollar.length - 1)));
 console.log(prices);
 
 // Filter
+// Old version to do
+let expensive = [];
+for (const price of prices) {
+  if (price >= 20) {
+    expensive.push(price);
+  }
+}
+
+// New version
+expensive = prices.filter((price) => price >= 20);
 
 // Reduce
