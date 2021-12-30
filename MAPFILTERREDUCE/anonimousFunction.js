@@ -13,3 +13,5 @@ console.log(
     return 2 * num;
   })
 );
+
+console.log(apply(5, (num) => 2 * num));
