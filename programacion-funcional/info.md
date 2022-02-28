@@ -1,4 +1,4 @@
-## FILTER
+# FILTER
 
 El objetivo de el método Filter es tener un arreglo filtrado, osea, solamente con los elementos que nosotros deseamos para poder trabajar en determinado momento.
 
@@ -25,7 +25,7 @@ console.log(numerosFiltrados, numeros)
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
-## Map
+# MAP
 
 - En este ejercicio, tenemos una funcion que se llama suma, la cual irá sumar números que le pasemos.
 
@@ -63,3 +63,16 @@ Primeramente tenemos que transformar el array de mascotas en un array de número
 Y al final, debemos dividir el resultado con el número de elementos que hay en las edades.
 `console.log( resultado / edades.length )`
 
+# REDUCE
+
+- Recibirá dos argumentos, el que recibe el reducer, y el segundo argumento es el valor inicial que va a tener el acumulador cuando comienze la iteración.
+
+```
+const reducido = [1, 2].reduce((acc, el) => acc + el, 0)
+console.log(reducido)
+```
+Como vemos, colocamos dos agumentos no método .reduce(), los cuales serán ejecutados siempre y cuando sea TRUE.
+- Estamos diciendo que nuestro acumulador "acc" comenzará con 0, al ejecutarse la función será pasado para "el" = 1, de esa forma "acc + el" seria lo mismo que "0 + 1", cierto?
+   Entonces tenemos almazenado actualmente 1 en "acc".
+
+   Para la segunda vez "el" recibe el segundo valor, "2", osea "1+2", por eso el resultado de 3
