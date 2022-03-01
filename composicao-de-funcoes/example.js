@@ -6,6 +6,8 @@ const esticar = (x) =>
     .split("")
     .reduce((final, letter) => final + `${letter}${letter}${letter}`)
     .replace(/\s+/g, " ");
+const qtdDeLetras = (x) => x.length;
+const triplo = (x) => x * 3;
 // console.log(exclamar(gritar('paolo')))
 
 const compor = (...funcoes) => {
@@ -25,6 +27,23 @@ const compor = (...funcoes) => {
 const exagerarMenos = compor(gritar, exclamar);
 const exagerar = compor(gritar, perguntar, exclamar);
 const exagerarMais = compor(gritar, perguntar, exclamar, esticar);
+const exagerarMaisLetras = compor(
+  gritar,
+  perguntar,
+  exclamar,
+  esticar,
+  qtdDeLetras
+);
+const exagerarMaisLetrasTriplo = compor(
+  gritar,
+  perguntar,
+  exclamar,
+  esticar,
+  qtdDeLetras,
+  triplo
+);
 console.log(exagerarMenos("bom dia"));
 console.log(exagerar("boa tarde"));
 console.log(exagerarMais("boa noite"));
+console.log(exagerarMaisLetras("boa noite"));
+console.log(exagerarMaisLetrasTriplo("boa noite"));
