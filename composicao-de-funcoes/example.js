@@ -10,11 +10,14 @@ const esticar = (x) =>
 
 const compor = (...funcoes) => {
   return function (text) {
-    let resultado = text;
-    for (let funcao of funcoes) {
-      resultado = funcao(resultado);
-    }
-    return resultado;
+    return funcoes.reduce((final, funcao) => {
+      return funcao(final);
+    }, text);
+    //   let resultado = text;
+    // for (let funcao of funcoes) {
+    // resultado = funcao(resultado);
+    // }
+    // return resultado;
   };
 };
 // const resultado = compor(gritar, exclamar, 'bom dia')
