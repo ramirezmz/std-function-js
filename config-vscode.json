@@ -1,0 +1,27 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Gruvbox Dark (Hard)",
+  "editor.fontFamily": "'Agave Nerd Font','UbuntuMono Nerd Font', 'monospace'",
+  "editor.tabSize": 3,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDelete": false,
+  "scm.inputFontSize": 14,
+  "markdown.preview.fontSize": 14144,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "'Agave Nerd Font', 'monospace'",
+  "window.menuBarVisibility": "toggle",
+  "vsicons.dontShowNewVersionMessage": true,
+  "redhat.telemetry.enabled": true,
+  "editor.fontSize": 18.5,
+  "bracketPairColorizer.depreciation-notice": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.cursorStyle": "line",
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 3,
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#dadd32"
+  },
+  "warmUp.changeCount": "15"
+}
