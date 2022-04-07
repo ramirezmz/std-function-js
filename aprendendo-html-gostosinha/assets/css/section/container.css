@@ -1,0 +1,9 @@
+.container {
+    background-color: black;
+}
+
+.container__tamanho {
+
+    width: 70%;
+    margin: auto;
+}

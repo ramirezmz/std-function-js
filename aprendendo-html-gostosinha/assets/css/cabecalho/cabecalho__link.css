@@ -1,0 +1,9 @@
+.cabecalho__link {
+  color: green;
+  font-size: 1.5rem;
+}
+
+.cabecalho__link:hover {
+  color: brown;
+  transition: 0.5s;
+}
