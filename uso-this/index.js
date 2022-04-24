@@ -5,3 +5,5 @@ function getName() {
 global.nick = "Roberto";
 
 getName();
+
+// asdasd
